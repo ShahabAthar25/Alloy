@@ -1,7 +1,7 @@
 from enum import Enum
 
 
-class TokenType(Enum):
+class TokenTypes(Enum):
     INT = "INT"
     FLOAT = "FLOAT"
     STRING = "STRING"
@@ -18,10 +18,13 @@ class TokenType(Enum):
     RCURLY = "RCURLY"
     KEYWORD = "KEYWORD"
     IDENTIFIER = "IDENTIFIER"
+    VERSION = "VERSION"
+    NEWLINE = "NEWLINE"
+    SEMICOLON = "SEMICOLON"
     EOF = "EOF"
 
 
-class KeywordType(Enum):
+class KeywordTypes(Enum):
     VAR = "var"
     IF = "IF"
     ELSE = "ELSE"
